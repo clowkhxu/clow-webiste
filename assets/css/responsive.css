@@ -1,0 +1,251 @@
+@media (max-width: 1239px) {
+  :root {
+    --distance: 48px;
+  }
+  .main-page {
+    padding: 0 var(--distance);
+  }
+  .main-page > header {
+    left: var(--distance);
+    right: var(--distance);
+  }
+  .search input {
+    width: 300px;
+  }
+  .item__list {
+    width: 480px;
+  }
+  .movie {
+    width: 20%;
+  }
+  .menu-header__item {
+    font-size: 1.5rem;
+  }
+  .item__list > li {
+    font-size: 1.4rem;
+  }
+  .loader {
+    left: calc(50% - var(--distance));
+  }
+}
+@media (max-width: 1023px) {
+  .bars,
+  .close,
+  .item__list {
+    display: flex;
+  }
+  :root {
+    --distance: 32px;
+  }
+  .main-page {
+    padding: 0 var(--distance);
+  }
+  .main-page > header {
+    justify-content: space-between;
+    left: var(--distance);
+    right: var(--distance);
+    padding: 16px 0;
+  }
+  .menu-header.active {
+    opacity: 1;
+    transform: translateX(0);
+    padding: 20px var(--distance) 20px 20px;
+  }
+  .menu-header {
+    inset: 0;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #22223b;
+    position: fixed;
+    z-index: 9999;
+    opacity: 0;
+    overflow-y: auto;
+    transition: 0.3s;
+    transform: translateX(-100%);
+  }
+  .menu-header__item:hover {
+    outline: unset;
+  }
+  .menu-header__item {
+    font-size: 1.8rem;
+  }
+  .item__list > li {
+    font-size: 1.6rem;
+  }
+  .close {
+    right: var(--distance);
+    top: 20px;
+  }
+  .item__list {
+    padding: 6px 12px;
+    width: unset;
+    opacity: 1;
+    position: unset;
+    background-color: unset;
+    max-height: unset;
+    box-shadow: unset;
+  }
+  .menu-header__item:nth-child(5):after,
+  .menu-header__item:nth-child(6):after {
+    display: none;
+  }
+  .search {
+    flex: unset;
+  }
+  .footer-item,
+  .search input,
+  .send-mail {
+    width: 100%;
+  }
+  .movie {
+    width: 25%;
+  }
+  .movie-info h3 {
+    font-size: 3rem;
+  }
+  .add-movie {
+    opacity: 1;
+  }
+  footer {
+    gap: 32px 0;
+  }
+  .episode {
+    width: calc(12.5% - 11px);
+  }
+  .loader {
+    left: calc(50% - var(--distance));
+  }
+}
+@media (max-width: 768px) {
+  #toast,
+  .close,
+  .main-page > header {
+    right: var(--distance);
+  }
+  :root {
+    --distance: 24px;
+  }
+  .main-page {
+    padding: 0 var(--distance);
+  }
+  .movie {
+    width: 33.3333%;
+  }
+  .main-page > header {
+    left: var(--distance);
+    padding: 16px 0;
+  }
+  .movie-info {
+    left: var(--distance);
+    bottom: var(--distance);
+  }
+  .menu-header.active {
+    padding: 16px var(--distance) 16px 16px;
+  }
+  .item__list > li {
+    width: calc(50% - 6px);
+  }
+  .close {
+    top: 16px;
+  }
+  .movie-info h3 {
+    font-size: 2rem;
+  }
+  #toast {
+    top: var(--distance);
+  }
+  .episode {
+    font-size: 1.4rem;
+    width: calc(16.66666% - 10px);
+  }
+  .loader {
+    left: calc(50% - var(--distance));
+  }
+}
+@media (max-width: 480px) {
+  #toast,
+  .close,
+  .main-page > header {
+    right: var(--distance);
+  }
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 6px;
+  }
+  :root {
+    --distance: 16px;
+  }
+  .main-page {
+    padding: 0 var(--distance);
+  }
+  .main-page > header {
+    left: var(--distance);
+    width: unset;
+    gap: 24px;
+  }
+  .menu-header.active {
+    padding: 8px var(--distance) 8px 8px;
+  }
+  .search input {
+    width: 84%;
+  }
+  .movie {
+    width: 50%;
+  }
+  .background-movie figure,
+  .slide figure {
+    height: 280px;
+  }
+  .movie figure {
+    height: 250px;
+  }
+  .name-movie {
+    font-size: 2rem;
+  }
+  .movie-info {
+    left: 12px;
+    bottom: 12px;
+  }
+  .info-bottom {
+    flex-wrap: wrap;
+  }
+  .toast__title,
+  section header {
+    font-size: 1.4rem;
+  }
+  .close {
+    top: 12px;
+  }
+  .view-iframe {
+    height: 210px;
+  }
+  .episode {
+    font-size: 1.2rem;
+    width: calc(25% - 28px);
+  }
+  .footer-item {
+    width: 100%;
+  }
+  #toast {
+    top: var(--distance);
+  }
+  .toast {
+    width: 320px;
+    padding: 8px;
+  }
+  .toast__message {
+    font-size: 1.3rem;
+  }
+  .prev {
+    left: 4px;
+  }
+  .next {
+    right: 4px;
+  }
+  .reset-value {
+    right: 40px;
+  }
+  .loader {
+    left: calc(50% - var(--distance)*2);
+  }
+}
